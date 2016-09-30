@@ -43,9 +43,35 @@
 }
 
 #rodape{
-    background-color: #003057
+    background-color: #003057;
+    padding: 25px 0px
 }
 
-#rodape btn{
+#rodape .row{
+    padding: 10px;
+}
+
+#rodape .mapa a{
+    font-weight: bold
+}
+
+#rodape .copyright{
+    color: white;
+    margin-bottom: 0 !important;
+}
+
+#rodape a, btn{
     color: white
+}
+
+.margin-top-10{
+    margin-top:10px
+}
+
+.padding-0{
+    padding: 0 !important;
+}
+
+.margin-0{
+    margin: 0;
 }
