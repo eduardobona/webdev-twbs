@@ -17,3 +17,19 @@
 #header a:hover{
     border-bottom: 2px solid #fff
 }
+
+#banner{
+    height: 430px;
+    padding: 150px 0px 0px 50px;
+    background: url('XC60_Diesel.png') no-repeat center bottom;
+}
+
+#banner h1{
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+#banner h5{
+    text-transform: uppercase
+}
