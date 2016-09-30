@@ -21,7 +21,7 @@
 #banner{
     height: 430px;
     padding: 150px 0px 0px 50px;
-    background: url('XC60_Diesel.png') no-repeat center bottom;
+    background: url('XC60_Diesel.png') no-repeat center;
 }
 
 #banner h1{
@@ -32,4 +32,12 @@
 
 #banner h5{
     text-transform: uppercase
+}
+
+#rodape{
+    background-color: #003057
+}
+
+#rodape btn{
+    color: white
 }
