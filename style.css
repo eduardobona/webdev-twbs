@@ -18,6 +18,14 @@
     border-bottom: 2px solid #fff
 }
 
+#header a.busca:hover{
+    border:0
+}
+
+#header a.busca img{
+    margin-top: -10px;
+}
+
 #banner{
     height: 430px;
     padding: 150px 0px 0px 50px;
