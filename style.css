@@ -1,0 +1,19 @@
+#header{
+    background-color: #161618;
+}
+
+#header #logo{
+    padding: 10px 0px;
+}
+
+#header a{
+    color:white;
+    text-transform: uppercase;
+    height:70px;
+    line-height: 50px;
+    border-radius: 0px
+}
+
+#header a:hover{
+    border-bottom: 2px solid #fff
+}
