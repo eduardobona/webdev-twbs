@@ -32,4 +32,4 @@ No Windows, utilize um terminal de sua escolha mas recomendo o Node.js command p
 
 # Atividades Aula 1
 - Com base no código-fonte entregue deixar a página inicial o mais próximo do site http://volvocars.com.br
-- Com o código da página inicial já desenvolvido (ou quase), criar uma outra página chamada visao.html que se aproxime desta URL http://www.volvocars.com/br/sobre/nossas-historias/visao-2020
+- Com o código da página inicial já desenvolvido (ou quase), criar uma outra página chamada visao.html que se aproxime desta URL http://www.volvocars.com/br/sobre/nossas-historias/visao-2020 e você não precisa se precoupar neste momento com os cídeos. Pode trabalhar com imagens no lugar deles.
