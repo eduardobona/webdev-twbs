@@ -29,3 +29,7 @@ No Windows, utilize um terminal de sua escolha mas recomendo o Node.js command p
 - cd webdev
 - npm config set registry http://registry.npmjs.org
 - bower install
+
+# Atividades Aula 1
+- Com base no código-fonte entregue deixar a página inicial o mais próximo do site http://volvocars.com.br
+- Com o código da página inicial já desenvolvido (ou quase), criar uma outra página chamada visao.html que se aproxime desta URL http://www.volvocars.com/br/sobre/nossas-historias/visao-2020
