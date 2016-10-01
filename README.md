@@ -27,5 +27,5 @@ No Windows, utilize um terminal de sua escolha mas recomendo o Node.js command p
 # Instalação
 - git clone https://github.com/eduardobona/webdev-twbs.git webdev
 - cd webdev
-- ssl npm config set registry http://registry.npmjs.org
+- npm config set registry http://registry.npmjs.org
 - bower install
