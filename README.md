@@ -21,6 +21,7 @@ Projeto de apoio para aula de Bootstrap para alunos da disciplina de Frameworks 
 - Implementação do Grunt no Estudo de Caso
 
 # Pré-Instalação
+No Windows, utilize um terminal de sua escolha mas recomendo o Node.js command prompt
  - npm install -g bower
 
 # Instalação
