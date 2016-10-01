@@ -20,12 +20,10 @@ Projeto de apoio para aula de Bootstrap para alunos da disciplina de Frameworks 
 - Apresentação das Ferramentas do Grunt
 - Implementação do Grunt no Estudo de Caso
 
-### Pré-Instalação
+# Pré-Instalação
+ - npm install -g bower
 
-npm install -g bower
-
-### Instalação
-
-git clone https://github.com/eduardobona/webdev-twbs.git webdev
-cd webdev
-bower install
+# Instalação
+- git clone https://github.com/eduardobona/webdev-twbs.git webdev
+- cd webdev
+- bower install
