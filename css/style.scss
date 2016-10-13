@@ -1,0 +1,96 @@
+// 
+// Variáveis
+// *** comentários assim não são gerados no .css
+// 
+// Declarando as variáveis de cor que serão reaproveitadas
+$fundo-escuro-topo: #161618;
+$fundo-escuro-rodape: #003057;
+
+// Declarando variáveis com valores numéricos para reaproveitarmos
+// Podemos utilizar estas variáveis númericas para operações matemáticas
+$topo-tamanho-da-imagem: 50;
+
+/**
+ * Header da Página
+ * Este comentário vai aparecer no arquivo .css
+ */
+#header{
+    background-color: $fundo-escuro-topo;
+    
+    #logo{
+        padding: 10px 0px;
+    }
+    
+    a{
+        color:white;
+        text-transform: uppercase;
+        height:#{$topo-tamanho-da-imagem + 20}px;
+        line-height: #{$topo-tamanho-da-imagem}px;
+        border-radius: 0px;
+    }
+    
+    a:hover{
+        border-bottom: 2px solid #fff
+    }
+    
+    a.busca:hover{
+        border:0
+    }
+    
+    a.busca img{
+        margin-top: -10px; // como deixar dinamico isso?
+    }
+}
+
+#banner{
+    height: 430px;
+    padding: 150px 0px 0px 50px;
+    background: url('images/XC60_Diesel.png') no-repeat center;
+    
+    h1{
+        font-size: 64px;
+        font-weight: bold;
+        text-transform: uppercase
+    }
+    
+    h5{
+        text-transform: uppercase
+    }
+}
+
+/**
+ * 
+ */
+#rodape{
+    background-color: $fundo-escuro-rodape;
+    padding: 25px 0px;
+    
+    .row{
+        padding: 10px;
+    }
+    
+    .mapa a{
+        font-weight: bold
+    }
+    
+    .copyright{
+        color: white;
+        margin-bottom: 0 !important;
+    }
+    
+    a, btn{
+        color: white
+    }
+}
+
+/**
+ * Criando um loop para gerar clases CSS
+ */
+$i: 0;
+@while $i <= 10 {
+    .padding-#{$i} { padding: $i; }
+    .padding-top-#{$i} { padding-top: $i; }
+    .margin-#{$i} { margin: $i; }
+    .margin-top-#{$i} { margin-top: $i; }
+    $i: $i + 10;
+}

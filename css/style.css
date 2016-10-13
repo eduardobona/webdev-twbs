@@ -1,0 +1,75 @@
+/**
+ *
+ */
+#header {
+  background-color: #161618; }
+  #header #logo {
+    padding: 10px 0px; }
+  #header a {
+    color: white;
+    text-transform: uppercase;
+    height: 70px;
+    line-height: 50px;
+    border-radius: 0px; }
+  #header a:hover {
+    border-bottom: 2px solid #fff; }
+  #header a.busca:hover {
+    border: 0; }
+  #header a.busca img {
+    margin-top: -10px; }
+
+#banner {
+  height: 430px;
+  padding: 150px 0px 0px 50px;
+  background: url("images/XC60_Diesel.png") no-repeat center; }
+  #banner h1 {
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  #banner h5 {
+    text-transform: uppercase; }
+
+/**
+ * 
+ */
+#rodape {
+  background-color: #003057;
+  padding: 25px 0px; }
+  #rodape .row {
+    padding: 10px; }
+  #rodape .mapa a {
+    font-weight: bold; }
+  #rodape .copyright {
+    color: white;
+    margin-bottom: 0 !important; }
+  #rodape a, #rodape btn {
+    color: white; }
+
+/**
+ * Criando um loop para gerar clases CSS
+ */
+.padding-0 {
+  padding: 0; }
+
+.padding-top-0 {
+  padding-top: 0; }
+
+.margin-0 {
+  margin: 0; }
+
+.margin-top-0 {
+  margin-top: 0; }
+
+.padding-10 {
+  padding: 10; }
+
+.padding-top-10 {
+  padding-top: 10; }
+
+.margin-10 {
+  margin: 10; }
+
+.margin-top-10 {
+  margin-top: 10; }
+
+/*# sourceMappingURL=style.css.map */
