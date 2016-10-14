@@ -7,6 +7,23 @@
     text-transform: uppercase
 }
 
+h1{
+    font-size: 64px;
+    font-weight: bold;
+    @include maiuscula;
+}
+    
+h5{
+    padding-top: 130px;
+    @include maiuscula;
+}
+
+#banner{
+    background: url('images/XC60_Diesel.png') no-repeat center;
+    height: 430px;
+    padding-left: 50px;
+}
+
 /**
  * Header da Página
  * Este comentário vai aparecer no arquivo .css
@@ -14,16 +31,12 @@
 #header{
     background-color: $fundo-escuro-topo;
     
-    #logo{
-        padding: 10px 0px;
-    }
-    
     a{
+        border-radius: 0;
         color:white;
-        @include maiuscula;
         height:#{$topo-tamanho-da-imagem + 20}px;
         line-height: #{$topo-tamanho-da-imagem}px;
-        border-radius: 0px;
+        @include maiuscula;
         
         &:hover{
             border-bottom: 2px solid #fff    
@@ -38,21 +51,9 @@
             }
         }
     }
-}
-
-#banner{
-    height: 430px;
-    padding: 150px 0px 0px 50px;
-    background: url('images/XC60_Diesel.png') no-repeat center;
     
-    h1{
-        font-size: 64px;
-        font-weight: bold;
-        @include maiuscula;
-    }
-    
-    h5{
-        @include maiuscula;
+    #logo{
+        padding: 10px 0;
     }
 }
 
@@ -67,7 +68,7 @@
 
 #rodape{
     background-color: $fundo-escuro-rodape;
-    padding: 25px 0px;
+    padding: 25px 0;
     
     .row{
         padding: 10px;
@@ -82,7 +83,7 @@
     
     .copyright{
         color: $cor-texto-rodape;
-        margin-bottom: 0 !important;
+        margin-bottom: 0;
     }
     
     a, btn{
