@@ -1,96 +1,106 @@
-@charset "UTF-8";
+@import "colors";
+
 /**
  * Mixins
- */
-/**
- * Header da P├ígina
- * Este coment├írio vai aparecer no arquivo .css
- */
-#header {
-  background-color: #161618; }
-
-#header #logo {
-  padding: 10px 0px; }
-
-#header a {
-  color: white;
-  text-transform: uppercase;
-  height: 70px;
-  line-height: 50px;
-  border-radius: 0px; }
-
-#header a:hover {
-  border-bottom: 2px solid #fff; }
-
-#header a .busca img {
-  margin-top: -10px; }
-
-#header a .busca:hover {
-  border: 0; }
-
-#banner {
-  height: 430px;
-  padding: 150px 0px 0px 50px;
-  background: url("images/XC60_Diesel.png") no-repeat center; }
-
-#banner h1 {
-  font-size: 64px;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-#banner h5 {
-  text-transform: uppercase; }
+ */ 
+@mixin maiuscula{
+    text-transform: uppercase
+}
 
 /**
- * Rodap├® da P├ígina
+ * Header da Página
+ * Este comentário vai aparecer no arquivo .css
  */
-.links-padrao, #rodape .mapa a:hover, #rodape a:hover, #rodape btn:hover {
-  text-decoration: underline; }
+#header{
+    background-color: $fundo-escuro-topo;
+    
+    #logo{
+        padding: 10px 0px;
+    }
+    
+    a{
+        color:white;
+        @include maiuscula;
+        height:#{$topo-tamanho-da-imagem + 20}px;
+        line-height: #{$topo-tamanho-da-imagem}px;
+        border-radius: 0px;
+        
+        &:hover{
+            border-bottom: 2px solid #fff    
+        }
+        
+        .busca{
+            img{
+                margin-top: -10px; // como deixar dinamico isso?
+            }   
+            &:hover{
+                border: 0
+            }
+        }
+    }
+}
 
-#rodape {
-  background-color: #003057;
-  padding: 25px 0px; }
+#banner{
+    height: 430px;
+    padding: 150px 0px 0px 50px;
+    background: url('images/XC60_Diesel.png') no-repeat center;
+    
+    h1{
+        font-size: 64px;
+        font-weight: bold;
+        @include maiuscula;
+    }
+    
+    h5{
+        @include maiuscula;
+    }
+}
 
-#rodape .row {
-  padding: 10px; }
+/**
+ * Rodapé da Página
+ */
 
-#rodape .mapa a {
-  font-weight: bold; }
+// este estilo será herdado nos links do rodapé
+.links-padrao{
+    text-decoration: underline;
+}
 
-#rodape .copyright {
-  color: #fff;
-  margin-bottom: 0 !important; }
-
-#rodape a, #rodape btn {
-  color: #fff; }
+#rodape{
+    background-color: $fundo-escuro-rodape;
+    padding: 25px 0px;
+    
+    .row{
+        padding: 10px;
+    }
+    
+    .mapa a{
+        font-weight: bold;
+        &:hover{
+            @extend .links-padrao;
+        }
+    }
+    
+    .copyright{
+        color: $cor-texto-rodape;
+        margin-bottom: 0 !important;
+    }
+    
+    a, btn{
+        color: $cor-texto-rodape;
+        &:hover{
+            @extend .links-padrao;
+        }
+    }
+}
 
 /**
  * Criando um loop para gerar clases CSS
  */
-.padding-0 {
-  padding: 0; }
-
-.padding-top-0 {
-  padding-top: 0; }
-
-.margin-0 {
-  margin: 0; }
-
-.margin-top-0 {
-  margin-top: 0; }
-
-.padding-10 {
-  padding: 10; }
-
-.padding-top-10 {
-  padding-top: 10; }
-
-.margin-10 {
-  margin: 10; }
-
-.margin-top-10 {
-  margin-top: 10; }
-
-/*# sourceMappingURL=style.css.map */
-
-/*# sourceMappingURL=style.scss.map */
+$i: 0;
+@while $i <= 10 {
+    .padding-#{$i} { padding: $i; }
+    .padding-top-#{$i} { padding-top: $i; }
+    .margin-#{$i} { margin: $i; }
+    .margin-top-#{$i} { margin-top: $i; }
+    $i: $i + 10;
+}
