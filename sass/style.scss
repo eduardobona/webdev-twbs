@@ -1,106 +1,96 @@
-@import "colors";
-
+@charset "UTF-8";
 /**
  * Mixins
- */ 
-@mixin maiuscula{
-    text-transform: uppercase
-}
+ */
+/**
+ * Header da P├ígina
+ * Este coment├írio vai aparecer no arquivo .css
+ */
+#header {
+  background-color: #161618; }
+
+#header #logo {
+  padding: 10px 0px; }
+
+#header a {
+  color: white;
+  text-transform: uppercase;
+  height: 70px;
+  line-height: 50px;
+  border-radius: 0px; }
+
+#header a:hover {
+  border-bottom: 2px solid #fff; }
+
+#header a .busca img {
+  margin-top: -10px; }
+
+#header a .busca:hover {
+  border: 0; }
+
+#banner {
+  height: 430px;
+  padding: 150px 0px 0px 50px;
+  background: url("images/XC60_Diesel.png") no-repeat center; }
+
+#banner h1 {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+#banner h5 {
+  text-transform: uppercase; }
 
 /**
- * Header da Página
- * Este comentário vai aparecer no arquivo .css
+ * Rodap├® da P├ígina
  */
-#header{
-    background-color: $fundo-escuro-topo;
-    
-    #logo{
-        padding: 10px 0px;
-    }
-    
-    a{
-        color:white;
-        @include maiuscula;
-        height:#{$topo-tamanho-da-imagem + 20}px;
-        line-height: #{$topo-tamanho-da-imagem}px;
-        border-radius: 0px;
-        
-        &:hover{
-            border-bottom: 2px solid #fff    
-        }
-        
-        .busca{
-            img{
-                margin-top: -10px; // como deixar dinamico isso?
-            }   
-            &:hover{
-                border: 0
-            }
-        }
-    }
-}
+.links-padrao, #rodape .mapa a:hover, #rodape a:hover, #rodape btn:hover {
+  text-decoration: underline; }
 
-#banner{
-    height: 430px;
-    padding: 150px 0px 0px 50px;
-    background: url('images/XC60_Diesel.png') no-repeat center;
-    
-    h1{
-        font-size: 64px;
-        font-weight: bold;
-        @include maiuscula;
-    }
-    
-    h5{
-        @include maiuscula;
-    }
-}
+#rodape {
+  background-color: #003057;
+  padding: 25px 0px; }
 
-/**
- * Rodapé da Página
- */
+#rodape .row {
+  padding: 10px; }
 
-// este estilo será herdado nos links do rodapé
-.links-padrao{
-    text-decoration: underline;
-}
+#rodape .mapa a {
+  font-weight: bold; }
 
-#rodape{
-    background-color: $fundo-escuro-rodape;
-    padding: 25px 0px;
-    
-    .row{
-        padding: 10px;
-    }
-    
-    .mapa a{
-        font-weight: bold;
-        &:hover{
-            @extend .links-padrao;
-        }
-    }
-    
-    .copyright{
-        color: $cor-texto-rodape;
-        margin-bottom: 0 !important;
-    }
-    
-    a, btn{
-        color: $cor-texto-rodape;
-        &:hover{
-            @extend .links-padrao;
-        }
-    }
-}
+#rodape .copyright {
+  color: #fff;
+  margin-bottom: 0 !important; }
+
+#rodape a, #rodape btn {
+  color: #fff; }
 
 /**
  * Criando um loop para gerar clases CSS
  */
-$i: 0;
-@while $i <= 10 {
-    .padding-#{$i} { padding: $i; }
-    .padding-top-#{$i} { padding-top: $i; }
-    .margin-#{$i} { margin: $i; }
-    .margin-top-#{$i} { margin-top: $i; }
-    $i: $i + 10;
-}
+.padding-0 {
+  padding: 0; }
+
+.padding-top-0 {
+  padding-top: 0; }
+
+.margin-0 {
+  margin: 0; }
+
+.margin-top-0 {
+  margin-top: 0; }
+
+.padding-10 {
+  padding: 10; }
+
+.padding-top-10 {
+  padding-top: 10; }
+
+.margin-10 {
+  margin: 10; }
+
+.margin-top-10 {
+  margin-top: 10; }
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.scss.map */

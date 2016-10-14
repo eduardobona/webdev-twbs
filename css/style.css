@@ -3,39 +3,46 @@
  * Mixins
  */
 /**
- * Header da Página
- * Este comentário vai aparecer no arquivo .css
+ * Header da P├ígina
+ * Este coment├írio vai aparecer no arquivo .css
  */
 #header {
   background-color: #161618; }
-  #header #logo {
-    padding: 10px 0px; }
-  #header a {
-    color: white;
-    text-transform: uppercase;
-    height: 70px;
-    line-height: 50px;
-    border-radius: 0px; }
-    #header a:hover {
-      border-bottom: 2px solid #fff; }
-    #header a .busca img {
-      margin-top: -10px; }
-    #header a .busca:hover {
-      border: 0; }
+
+#header #logo {
+  padding: 10px 0px; }
+
+#header a {
+  color: white;
+  text-transform: uppercase;
+  height: 70px;
+  line-height: 50px;
+  border-radius: 0px; }
+
+#header a:hover {
+  border-bottom: 2px solid #fff; }
+
+#header a .busca img {
+  margin-top: -10px; }
+
+#header a .busca:hover {
+  border: 0; }
 
 #banner {
   height: 430px;
   padding: 150px 0px 0px 50px;
   background: url("images/XC60_Diesel.png") no-repeat center; }
-  #banner h1 {
-    font-size: 64px;
-    font-weight: bold;
-    text-transform: uppercase; }
-  #banner h5 {
-    text-transform: uppercase; }
+
+#banner h1 {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+#banner h5 {
+  text-transform: uppercase; }
 
 /**
- * Rodapé da Página
+ * Rodap├® da P├ígina
  */
 .links-padrao, #rodape .mapa a:hover, #rodape a:hover, #rodape btn:hover {
   text-decoration: underline; }
@@ -43,15 +50,19 @@
 #rodape {
   background-color: #003057;
   padding: 25px 0px; }
-  #rodape .row {
-    padding: 10px; }
-  #rodape .mapa a {
-    font-weight: bold; }
-  #rodape .copyright {
-    color: #fff;
-    margin-bottom: 0 !important; }
-  #rodape a, #rodape btn {
-    color: #fff; }
+
+#rodape .row {
+  padding: 10px; }
+
+#rodape .mapa a {
+  font-weight: bold; }
+
+#rodape .copyright {
+  color: #fff;
+  margin-bottom: 0 !important; }
+
+#rodape a, #rodape btn {
+  color: #fff; }
 
 /**
  * Criando um loop para gerar clases CSS
@@ -79,5 +90,8 @@
 
 .margin-top-10 {
   margin-top: 10; }
+
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
 
 /*# sourceMappingURL=style.css.map */
