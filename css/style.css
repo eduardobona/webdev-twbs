@@ -1,5 +1,10 @@
+@charset "UTF-8";
 /**
- *
+ * Mixins
+ */
+/**
+ * Header da Página
+ * Este comentário vai aparecer no arquivo .css
  */
 #header {
   background-color: #161618; }
@@ -11,12 +16,12 @@
     height: 70px;
     line-height: 50px;
     border-radius: 0px; }
-  #header a:hover {
-    border-bottom: 2px solid #fff; }
-  #header a.busca:hover {
-    border: 0; }
-  #header a.busca img {
-    margin-top: -10px; }
+    #header a:hover {
+      border-bottom: 2px solid #fff; }
+    #header a .busca img {
+      margin-top: -10px; }
+    #header a .busca:hover {
+      border: 0; }
 
 #banner {
   height: 430px;
@@ -30,8 +35,11 @@
     text-transform: uppercase; }
 
 /**
- * 
+ * Rodapé da Página
  */
+.links-padrao, #rodape .mapa a:hover, #rodape a:hover, #rodape btn:hover {
+  text-decoration: underline; }
+
 #rodape {
   background-color: #003057;
   padding: 25px 0px; }
@@ -40,10 +48,10 @@
   #rodape .mapa a {
     font-weight: bold; }
   #rodape .copyright {
-    color: white;
+    color: #fff;
     margin-bottom: 0 !important; }
   #rodape a, #rodape btn {
-    color: white; }
+    color: #fff; }
 
 /**
  * Criando um loop para gerar clases CSS
