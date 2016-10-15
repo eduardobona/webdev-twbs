@@ -22,13 +22,15 @@ Projeto de apoio para aula de Bootstrap para alunos da disciplina de Frameworks 
 
 # Pré-Instalação
 No Windows, utilize um terminal de sua escolha mas recomendo o Node.js command prompt
- - npm install -g bower
+- npm config set registry http://registry.npmjs.org
+- npm install -g bower
+- npm install -g grunt
 
 # Instalação
 - git clone https://github.com/eduardobona/webdev-twbs.git webdev
 - cd webdev
-- npm config set registry http://registry.npmjs.org
 - bower install
+- npm install
 
 # Atividades Aula 1
 - Com base no código-fonte entregue deixar a página inicial o mais próximo do site http://volvocars.com.br
