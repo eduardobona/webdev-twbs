@@ -1,0 +1,19 @@
+// 
+// Variáveis
+// *** comentários assim não são gerados no .css
+// 
+// Declarando as variáveis de cor que serão reaproveitadas
+$fundo-escuro-topo: #161618;
+$fundo-escuro-rodape: #003057;
+
+$cliente: 'cesumar';
+$cor-texto-rodape: #fff;
+@if $cliente != 'cesumar' {
+    $cor-texto-rodape: #black;
+}
+
+$cor-texto-rodape: #fff;
+
+// Declarando variáveis com valores numéricos para reaproveitarmos
+// Podemos utilizar estas variáveis númericas para operações matemáticas
+$topo-tamanho-da-imagem: 50;
