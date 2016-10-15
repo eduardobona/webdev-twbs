@@ -49,4 +49,5 @@ Com base no código desenvolvido na aula anterior e no material e apresentação
 - Reescreva seu código em SCSS ou SASS de modo a padronizar seu código legado com o novo código base que foi criado com SASS
 - Na medida do possível e conforme seu entendimento, "componentize" ou "modularize" o máximo seus estilos criados obtendo uma estrutura altamente desaclopada e reaproveitável
 
-Ao término da atividade, envie um arquivo zipado sem a pasta node_modules e sem a pasta bower_components para o email pos@eduardobona.com.br com o assunto "Atividade Aula 2 Out/2016 - [COLOQUE_SEU_NOME]". Se o trabalho for feito em equipe cada integrante deve mandar email separadamente.
+Ao término da atividade, 
+envie um arquivo zipado (sem a pasta node_modules, sem a pasta bower_components e sem a pasta .git) ou envie o link do projeto no seu GITHUB para o email pos@eduardobona.com.br com o assunto "Atividade Aula 2 Out/2016 - [COLOQUE_SEU_NOME]". Se o trabalho for feito em equipe cada integrante deve mandar email separadamente.
