@@ -25,7 +25,7 @@ No Windows, utilize um terminal de sua escolha mas recomendo o Node.js command p
 ```
 npm config set registry http://registry.npmjs.org
 npm install -g bower
-npm install -g grunt
+npm install -g grunt-cli
 ```
 
 # Instalação
@@ -34,6 +34,7 @@ git clone https://github.com/eduardobona/webdev-twbs.git
 cd webdev-twbs
 bower install
 npm install
+grunt
 ```
 
 # Atividades Aula 1
