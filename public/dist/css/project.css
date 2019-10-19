@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/**
+ * Mixins
+ */
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h5 {
+  padding-top: 130px;
+  text-transform: uppercase;
+}
+
+#banner {
+  background: url("images/XC90-1600x430.jpg") no-repeat center;
+  height: 430px;
+  padding-left: 700px;
+}
+
+/**
+ * Header da Página
+ * Este comentário vai aparecer no arquivo .css
+ */
+#header {
+  background-color: #161618;
+}
+#header a {
+  border-radius: 0;
+  color: white;
+  height: 70px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+#header a:hover {
+  border-bottom: 2px solid #fff;
+}
+#header a .busca img {
+  margin-top: -10px;
+}
+#header a .busca:hover {
+  border: 0;
+}
+#header #logo {
+  padding: 10px 0;
+}
+
+/**
+ * Rodapé da Página
+ */
+.links-padrao, #rodape a:hover, #rodape btn:hover, #rodape .mapa a:hover {
+  text-decoration: underline;
+}
+
+#rodape {
+  background-color: #003057;
+  padding: 25px 0;
+}
+#rodape .row {
+  padding: 10px;
+}
+#rodape .mapa a {
+  font-weight: bold;
+}
+#rodape .copyright {
+  color: #fff;
+  margin-bottom: 0;
+}
+#rodape a, #rodape btn {
+  color: #fff;
+}
+/**
+ * Criando um loop para gerar clases CSS
+ */
+.padding-0 {
+  padding: 0;
+}
+
+.padding-top-0 {
+  padding-top: 0;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}
+
+.padding-10 {
+  padding: 10;
+}
+
+.padding-top-10 {
+  padding-top: 10;
+}
+
+.margin-10 {
+  margin: 10;
+}
+
+.margin-top-10 {
+  margin-top: 10;
+}
+
+/*# sourceMappingURL=project.css.map */

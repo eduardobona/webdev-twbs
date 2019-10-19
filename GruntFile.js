@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'sass',
                     src: ['*.scss'],
-                    dest: 'css',
+                    dest: 'public/dist/css',
                     ext: '.css'
                 }]
             }
@@ -27,14 +27,15 @@ module.exports = function(grunt) {
         cssmin : {
             target : {
                 files : {
-                    'dist/all-core-css.min.css' : [
-                        'bower_components/bootstrap/dist/css/bootstrap.min.css',
-                        'css/style.css'
+                    'public/dist/css/all.min.css' : [
+                        'public/dist/css/bootstrap.css',
+                        'public/dist/css/project.css'
                     ]
                 }
             }
         },
-        
+
+        /*
         copy: {
             icons : {
                 expand: true,
@@ -48,19 +49,19 @@ module.exports = function(grunt) {
                 src: '*',
                 dest: 'dist/images/'
             }
-        },
+        }
+        */
 
         csslint: {
-            options: {
-                ids: false
-            },
             strict: {
-                src: ['css/*.css']
+                src: [
+                    'public/dist/css/all.css'
+                ]
             }
         },
 
         clean: [
-            "dist/*"
+            "public/dist/*"
         ]
     });
     
@@ -74,6 +75,6 @@ module.exports = function(grunt) {
     
     // Default task(s).
     grunt.registerTask('default', [
-        'clean', 'uglify', 'sass', 'cssmin', 'copy', 'csslint'
+        'clean', 'uglify', 'sass', 'cssmin', 'csslint'
     ]);
 };
